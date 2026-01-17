@@ -13,9 +13,6 @@
 
   <h3 align="center">A 3D Developer Portfolio</h3>
 
-   <div align="center">
-     Build this project step by step with our detailed tutorial on <a href="https://www.youtube.com/@javascriptmastery/videos" target="_blank"><b>JavaScript Mastery</b></a> YouTube. Join the JSM family!
-    </div>
 </div>
 
 ## 📋 <a name="table">Table of Contents</a>
@@ -30,11 +27,7 @@
 
 ## 🚨 Tutorial
 
-This repository contains the code corresponding to an in-depth tutorial available on our YouTube channel, <a href="https://www.youtube.com/@javascriptmastery/videos" target="_blank"><b>JavaScript Mastery</b></a>. 
 
-If you prefer visual learning, this is the perfect resource for you. Follow our tutorial to learn how to build projects like these step-by-step in a beginner-friendly manner!
-
-<a href="https://youtu.be/0fYi8SGA20k?feature=shared" target="_blank"><img src="https://github.com/sujatagunale/EasyRead/assets/151519281/1736fca5-a031-4854-8c09-bc110e3bc16d" /></a>
 
 ## <a name="introduction">🤖 Introduction</a>
 
@@ -88,10 +81,6 @@ Make sure you have the following installed on your machine:
 
 **Cloning the Repository**
 
-```bash
-git clone git@github.com:adrianhajdin/project_3D_developer_portfolio.git
-cd project_3D_developer_portfolio
-```
 
 **Installation**
 
@@ -152,6 +141,10 @@ import {
   jobit,
   tripguide,
   threejs,
+  ml,
+  software,
+  data,
+  database
 } from "../assets";
 
 export const navLinks = [
@@ -171,20 +164,20 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
-    icon: web,
+    title: "Data Engineer",
+    icon: data, // pipeline / database icon
   },
   {
-    title: "React Native Developer",
-    icon: mobile,
+    title: "Database Engineer",
+    icon: database,
   },
   {
-    title: "Backend Developer",
-    icon: backend,
+    title: "Machine Learning Engineer",
+    icon: ml,
   },
   {
-    title: "Content Creator",
-    icon: creator,
+    title: "Software Engineer",
+    icon: software,
   },
 ];
 
@@ -301,95 +294,96 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+      "Strong data engineering foundations come from understanding data modeling, ETL design, and system reliability — not just tools.",
+    name: "Martin Kleppmann",
+    designation: "Author & Researcher",
+    company: "University of Cambridge",
+    image: "https://upload.wikimedia.org/wikipedia/commons/4/4f/Martin_Kleppmann.jpg",
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+      "Good machine learning systems are built on clean data pipelines, reproducible experiments, and strong engineering practices.",
+    name: "Andrew Ng",
+    designation: "Founder",
+    company: "DeepLearning.AI",
+    image: "https://upload.wikimedia.org/wikipedia/commons/5/5f/Andrew_Ng_2019.jpg",
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+      "Databases are the backbone of reliable software systems — performance, consistency, and correctness always matter.",
+    name: "Michael Stonebraker",
+    designation: "Database Systems Pioneer",
+    company: "MIT",
+    image: "https://upload.wikimedia.org/wikipedia/commons/0/02/Michael_Stonebraker.jpg",
   },
 ];
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "End-to-End ETL Data Pipeline",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Designed and implemented a complete ETL pipeline to ingest raw data from multiple sources, clean and transform it using Python, and store it in a PostgreSQL database for analytics and reporting.",
     tags: [
       {
-        name: "react",
+        name: "python",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "postgresql",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "etl",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: etlPipeline, // pipeline / data-flow image
+    source_code_link: "https://github.com/Muhfees/etl-data-pipeline",
   },
   {
-    name: "Job IT",
+    name: "Machine Learning Data Pipeline",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Built a machine learning pipeline that performs data preprocessing, feature engineering, model training, and evaluation, focusing on reproducibility and clean data preparation.",
     tags: [
       {
-        name: "react",
+        name: "python",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "scikit-learn",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "ml-pipeline",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: mlPipeline, // ML / neural / data image
+    source_code_link: "https://github.com/Muhfees/ml-data-pipeline",
   },
   {
-    name: "Trip Guide",
+    name: "Relational Database Design & Optimization",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Designed a normalized relational database schema and implemented complex SQL queries, joins, stored procedures, and indexing strategies to improve query performance and data integrity.",
     tags: [
       {
-        name: "nextjs",
+        name: "sql",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "mysql",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "database-design",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: databaseDesign, // database cylinder image
+    source_code_link: "https://github.com/Muhfees/database-design-project",
   },
 ];
+
 
 export { services, technologies, experiences, testimonials, projects };
 ```
